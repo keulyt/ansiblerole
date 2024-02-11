@@ -1,0 +1,10 @@
+---
+- name: Update the package list
+  ansible.builtin.apt:
+    update_cache: yes
+    cache_valid_time: 3600 # Optional: Cache validity in seconds
+
+- name: Upgrade all packages to the latest version
+  ansible.builtin.apt:
+    upgrade: dist
+    autoremove: yes

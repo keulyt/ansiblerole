@@ -1,0 +1,6 @@
+---
+- hosts: ec2-44-202-143-2.compute-1.amazonaws.com
+  become: yes
+  roles:
+    #patching
+    - jenkins
